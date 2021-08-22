@@ -4,5 +4,5 @@ MAINTAINER Lidor G
 WORKDIR /usr/app
 COPY . .
 RUN npm install
-ENV ENVIRONMENT=PRODUCTION & echo "${DEVOPS-LEVEL}"
+ENV ENVIRONMENT PRODUCTION & echo '${DEVOPS-LEVEL}'
 CMD ["node", "index.js"]
