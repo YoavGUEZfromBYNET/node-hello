@@ -5,4 +5,4 @@ WORKDIR /usr/app
 COPY . .
 RUN npm install & echo "NEW arg: ${DEVOPS_LEVEL}" & echo "NEW arg: ${DEVOPS_LEVEL}" >YG.txt
 ENV ENVIRONMENT PRODUCTION
-CMD ["node", "index.js"]
+CMD [ "node", "index.js" ]
