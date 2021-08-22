@@ -3,6 +3,6 @@ ARG DEVOPS-LEVEL
 MAINTAINER Yoav G
 WORKDIR /usr/app
 COPY . .
-RUN npm install & echo '${DEVOPS-LEVEL}'
+RUN npm install & echo "YG-ARG = $DEVOPS-LEVEL"
 ENV ENVIRONMENT PRODUCTION
 CMD ["node", "index.js"]
