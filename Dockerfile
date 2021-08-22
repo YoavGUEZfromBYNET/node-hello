@@ -3,6 +3,6 @@ ARG DEVOPS-LEVEL
 MAINTAINER Yoav G
 WORKDIR /usr/app
 COPY . .
-RUN npm install
-ENV ENVIRONMENT PRODUCTION & echo '${DEVOPS-LEVEL}'
+RUN npm install & echo '${DEVOPS-LEVEL}'
+ENV ENVIRONMENT PRODUCTION
 CMD ["node", "index.js"]
