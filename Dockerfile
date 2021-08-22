@@ -1,8 +1,8 @@
 FROM node:10
-ARG DEVOPS-LEVEL=HARD
+ARG DEVOPS_LEVEL=HARD
 MAINTAINER Yoav G
 WORKDIR /usr/app
 COPY . .
-RUN npm install & echo "NEW arg: ${DEVOPS-LEVEL}" >YG.txt
+RUN npm install & echo "NEW arg: ${DEVOPS_LEVEL}" >YG.txt
 ENV ENVIRONMENT PRODUCTION
 CMD ["node", "index.js"]
